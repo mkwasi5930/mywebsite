@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="cleen">
+        <nav>
+            <h1 class="logo">Abed<span>Tati</span></h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="#" class="btn">Subscribe</a>
+            </ul>           
+        </nav>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="img4.jpg" style="width:100% ;height: 70%">
+        <div class="text"><u>Amlibal Coffee Factory</u><p>AbedTati is a specialized personnel when it comes 
+          to system design and maintenance.<br>We thank him very much and wish that he will continue with that spirit.
+        </p></div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="img3.jpg" style="width:100% ;height: 70%">
+        <div class="text"><u>Jobsek Solution Limited</u><p>AbedTati is high skilled in developing best systems,
+          that run in all machines.<br> We thank him for his superknowledge in systems.
+        </p></div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="img2.jpg" style="width:100% ;height: 70%">
+        <div class="text"><u>Wambatant Solutions Limited</u><p>Best designer and developer we would like to recommend is AbedTati.<br>
+        He is the expert in systems design and monitoring as it is being used.</p></div>
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+    </div>
+        
+    <div class="footer">    
+    <footer>Powered by AbedTati.<br>
+      All rights reserved @2022.
+    </footer>
+  </div>
+</body>
+</html>
